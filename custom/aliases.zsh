@@ -3,6 +3,14 @@
 ##################
 
 alias stud='cd ~/Dropbox/Studium/computer\ science\ BSc'
+alias bsem1='cd ~/Dropbox/Studium/computer\ science\ BSc/semester\ 1'
+alias bsem2='cd ~/Dropbox/Studium/computer\ science\ BSc/semester\ 2'
+alias bsem3='cd ~/Dropbox/Studium/computer\ science\ BSc/semester\ 3'
+alias bsem4='cd ~/Dropbox/Studium/computer\ science\ BSc/semester\ 4'
+alias bsem5='cd ~/Dropbox/Studium/computer\ science\ BSc/semester\ 5'
+alias bsem6='cd ~/Dropbox/Studium/computer\ science\ BSc/semester\ 6'
+alias bsem7='cd ~/Dropbox/Studium/computer\ science\ BSc/semester\ 7'
+alias bt='cd ~/daniel/Dropbox/Studium/computer science BSc/bachelor-thesis'
 
 alias lsl='ls -lh'
 
@@ -10,8 +18,8 @@ alias lsl='ls -lh'
 # RoboCup
 # A small collection of aliases and functions for our tools, enviroments and building our code
 ## Locations
-export BITBOTS_CODE_DIR=~/eclipse-workspace/robocup/code
-export BITBOTS_CHROOT_DIR=~/eclipse-workspace/robocup/darwin-chroot
+export BITBOTS_CODE_DIR=~/repositories/robocup/code
+export BITBOTS_CHROOT_DIR=~/repositories/robocup/darwin-chroot
 
 ## ChRoot
 #alias ChRoot="sudo mount --bind ~/Pictures/darwin-testimages ${BITBOTS_CHROOT_DIR}/home/darwin/Pictures && sudo ~/darwin-chroot/startup.sh ${BITBOTS_CODE_DIR} ; sudo umount ${BITBOTS_CHROOT_DIR}/home/darwin/Pictures"
