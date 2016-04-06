@@ -1,4 +1,4 @@
-##################                                                                                                  
+##################
 # custom aliases #
 ##################
 
@@ -13,6 +13,8 @@ alias bsem7='cd ~/Dropbox/Studium/computer\ science\ BSc/semester\ 7'
 alias bt='cd ~/daniel/Dropbox/Studium/computer science BSc/bachelor-thesis'
 
 alias lsl='ls -lh'
+
+alias py34='source /home/daniel/python34-venv-standard/bin/activate'
 
 
 # RoboCup
