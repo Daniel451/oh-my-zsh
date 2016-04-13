@@ -8,9 +8,6 @@ export TERM="xterm-256color"
 # Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="dreign"
 
-# history size
-SAVEHIST=100000
-HISTSIZE=100000
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -41,7 +38,11 @@ DISABLE_AUTO_UPDATE="true"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="dd.mm.yyyy"
+
+# history size
+SAVEHIST=100000
+HISTSIZE=100000
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -84,8 +85,29 @@ bindkey "^w" forward-word
 
 # n-history
 zle -N znt-history-widget
-bindkey "^R" znt-history-widget
+bindkey "^r" znt-history-widget
 
 # n-cd
 zle -N znt-cd-widget
-bindkey "^A" znt-cd-widget
+bindkey "^[r" znt-cd-widget
+
+#################
+# ZSH shortcuts #
+#################
+
+# move line
+bindkey "^a" beginning-of-line      # Ctrl-a - move to beginning-of-line
+bindkey "^e" end-of-line            # Ctrl-e - move to end-of-line
+
+# move word
+bindkey "^[[1;5D" backward-word     # Ctrl-LeftArrow - move backward one word
+bindkey "^[[1;5C" forward-word      # Ctrl-RightArrow - move forward one word
+
+# delete line
+bindkey "^u" kill-whole-line        # Ctrl-u - kill the *WHOLE* line (just characters, not like Ctrl-c)
+bindkey "^k" kill-line              # Ctrl-k - kill the characters *AFTER* the current cursor position
+bindkey "^j" backward-kill-line     # Ctrl-i - kill the characters *BEFORE* the current cursor position
+
+# delete word
+bindkey "^[f" delete-word           # Alt-f - kill the word *AFTER* the cursor
+bindkey "^[d" backward-delete-word  # Alt-d - kill the word *BEFORE* the cursor
