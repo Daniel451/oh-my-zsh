@@ -14,7 +14,11 @@ alias bt='cd ~/daniel/Dropbox/Studium/computer science BSc/bachelor-thesis'
 
 alias lsl='ls -lh'
 
-alias py34='source /home/daniel/python34-venv-standard/bin/activate'
+alias tf27='source /home/daniel/tensorflow2.7/bin/activate'
+alias tf35='source /home/daniel/tensorflow3.5/bin/activate'
+alias litos35='source ~/litos35/litos35-venv/bin/activate'
+alias litos27='source /home/daniel/litos27/bin/activate'
+alias robo35='source ~/roboai35/roboai35-venv/bin/activate'
 
 
 # RoboCup
