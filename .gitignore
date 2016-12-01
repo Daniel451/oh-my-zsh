@@ -2,4 +2,12 @@ locals.zsh
 log/.zsh_history
 projects.zsh
 *.swp
+
+# custom files
+custom/
+!custom/plugins/example
+!custom/example.zsh
+
+# temp files directories
 cache/
+log/
