@@ -14,12 +14,12 @@ alias bt='cd ~/daniel/Dropbox/Studium/computer science BSc/bachelor-thesis'
 
 alias lsl='ls -lh'
 
-alias tf27='source /home/daniel/tensorflow2.7/bin/activate'
-alias tf35='source /home/daniel/tensorflow3.5/bin/activate'
-alias litos35='source ~/litos35/litos35-venv/bin/activate'
-alias litos27='source /home/daniel/litos27/bin/activate'
-alias robo35='source ~/roboai35/roboai35-venv/bin/activate'
+alias robo36='source ~/roboai36/roboai36-venv/bin/activate'
 
+# git log aliases
+alias gitlogs="git log --pretty=format:'%C(red)* %h %Cblue%>(20)%ad %Cgreen%<(20)%aN%Cred%d %Creset%s' --date=relative"
+alias gitlogg="git log --graph --pretty=format:'%C(red)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s' --date=relative"
+alias gitlogl="git log --all --graph --pretty=format:'%C(red)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s' --date=relative --stat"
 
 # RoboCup
 # A small collection of aliases and functions for our tools, enviroments and building our code
