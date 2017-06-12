@@ -21,6 +21,10 @@ alias roboai36='source ~/roboai36/roboai36-venv/bin/activate'
 # feh aliases
 alias fehaa='feh --auto-zoom --force-alias'
 
+# git log aliases
+alias gitlogs="git log --pretty=format:'%C(red)* %h %Cblue%>(20)%ad %Cgreen%<(20)%aN%Cred%d %Creset%s' --date=relative"
+alias gitlogg="git log --graph --pretty=format:'%C(red)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s' --date=relative"
+alias gitlogl="git log --all --graph --pretty=format:'%C(red)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s' --date=relative --stat"
 
 # RoboCup
 # A small collection of aliases and functions for our tools, enviroments and building our code
