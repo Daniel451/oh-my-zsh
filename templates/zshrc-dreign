@@ -15,7 +15,6 @@ export TERM="xterm-256color"
 export GREP_COLORS="fn=34:mc=02;30:ms=33:sl=21:cx=31:mt=01;33:ln=33"
 
 
-
 ###############################
 ### ssh configuration stuff ###
 ###############################
@@ -73,14 +72,13 @@ SAVEHIST=100000
 HISTSIZE=100000
 
 # Would you like to use another custom folder than $ZSH/custom?
-#
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras dirhistory zsh-navigation-tools colored-man-pages)
+plugins=(git git-extras dirhistory zsh-navigation-tools colored-man-pages archlinux zsh-completions encode64 pep8 pip pyenv python wd)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,7 +116,7 @@ bindkey "^r" znt-history-widget     # Ctrl-r - fuzzy-search widget for command h
 
 # n-cd
 zle -N znt-cd-widget
-bindkey "^[r" znt-cd-widget         # Ctrl-Alt-r - fuzzy-search widget for directory history
+bindkey "^[r" znt-cd-widget         # Alt-r - fuzzy-search widget for directory history
 
 #################
 # ZSH shortcuts #
@@ -134,8 +132,8 @@ bindkey "^[[1;5C" forward-word      # Ctrl-RightArrow - move forward one word
 
 # delete line
 bindkey "^u" kill-whole-line        # Ctrl-u - kill the *WHOLE* line (just characters, not like Ctrl-c)
-bindkey "^k" kill-line              # Ctrl-k - kill the characters *AFTER* the current cursor position
-bindkey "^j" backward-kill-line     # Ctrl-i - kill the characters *BEFORE* the current cursor position
+bindkey "^l" kill-line              # Ctrl-k - kill the characters *AFTER* the current cursor position
+bindkey "^h" backward-kill-line     # Ctrl-i - kill the characters *BEFORE* the current cursor position
 
 # delete word
 bindkey "^[f" delete-word           # Alt-f - kill the word *AFTER* the cursor

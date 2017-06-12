@@ -12,13 +12,14 @@ alias bsem6='cd ~/Dropbox/Studium/computer\ science\ BSc/semester\ 6'
 alias bsem7='cd ~/Dropbox/Studium/computer\ science\ BSc/semester\ 7'
 alias bt='cd ~/daniel/Dropbox/Studium/computer science BSc/bachelor-thesis'
 
+# ls aliases
 alias lsl='ls -lh'
 
-alias tf27='source /home/daniel/tensorflow2.7/bin/activate'
-alias tf35='source /home/daniel/tensorflow3.5/bin/activate'
-alias litos35='source ~/litos35/litos35-venv/bin/activate'
-alias litos27='source /home/daniel/litos27/bin/activate'
-alias robo35='source ~/roboai35/roboai35-venv/bin/activate'
+# virtual environments
+alias roboai36='source ~/roboai36/roboai36-venv/bin/activate'
+
+# feh aliases
+alias fehaa='feh --auto-zoom --force-alias'
 
 
 # RoboCup
