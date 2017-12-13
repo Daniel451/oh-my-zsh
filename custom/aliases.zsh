@@ -12,11 +12,18 @@ alias bsem6='cd ~/Dropbox/Studium/computer\ science\ BSc/semester\ 6'
 alias bsem7='cd ~/Dropbox/Studium/computer\ science\ BSc/semester\ 7'
 alias bt='cd ~/daniel/Dropbox/Studium/computer science BSc/bachelor-thesis'
 
+# sshfs
+alias mount_ws16hdd='sshfs -o idmap=user,umask=$(umask),gid=$(id -g),uid=$(id -u),user,reconnect,ServerAliveInterval=15 ws16:/srv/hdd ~/mnt/ws16hdd'
+alias umount_ws16hdd='fusermount -u ~/mnt/ws16hdd'
+alias mount_ws16ssd='sshfs -o idmap=user,umask=$(umask),gid=$(id -g),uid=$(id -u),user,reconnect,ServerAliveInterval=15 ws16:/srv/ssd ~/mnt/ws16ssd'
+alias umount_ws16ssd='fusermount -u ~/mnt/ws16ssd'
+
 # ls aliases
 alias lsl='ls -lh'
 
 # virtual environments
 alias roboai36='source ~/roboai36/roboai36-venv/bin/activate'
+alias dls="source ~/DLS/bin/activate"
 
 # feh aliases
 alias fehaa='feh --auto-zoom --force-alias'
