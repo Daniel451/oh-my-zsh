@@ -4,7 +4,7 @@ projects.zsh
 *.swp
 
 # custom files
-custom/
+#custom/
 
 # temp files directories
 cache/
